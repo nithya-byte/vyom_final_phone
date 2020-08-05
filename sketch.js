@@ -3,7 +3,7 @@ const Engine = Matter.Engine;
 const World = Matter.World;
 const Bodies = Matter.Bodies;
 const Body = Matter.Body;
-var tunnelImg,textImg,marioKeyImg;
+var tunnelImg,marioKeyImg;
 var gameState="start";
 
 //preload to load the pipe & text image
@@ -52,7 +52,7 @@ function draw() {
   fill("red");
  maze.display();
   fill("pink");
-  text("Touch the screen when the key is near the pipe",windowWidth/2-300,windowHeight/2);
+  text("Touch the screen when the key is near the pipe",windowWidth/2-200,windowHeight/2-100);
  
   key1.display();
  drawSprites();
